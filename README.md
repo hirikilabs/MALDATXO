@@ -8,6 +8,10 @@ This project is made to Olatu Talka festival (an event within Donostia 2016 Euro
 [Tunnel location] (https://www.google.es/maps/@43.3186897,-1.9745292,3a,75y,99.7h,91.95t/data=!3m7!1e1!3m5!1sRalsiEKO-MsOvPg1OQ4R-g!2e0!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3DRalsiEKO-MsOvPg1OQ4R-g%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D34.23772%26pitch%3D0!7i13312!8i6656)
   
 The sketch controls 10 AC led system with a AC led controller with zero cross detection making then shine with some animations at night and lighing up the tunel at daylight. Also, it fades up when a ongoing passerby is detected by the PIR detectors at night.
+
+![alt tag](http://www.eneka.com.uy/images/stories/virtuemart/product/Arduino_Mega_256_53a1b86fb47ef.jpg)
+
+[Arduino Mega 2560] (https://www.arduino.cc/en/Main/arduinoBoardMega2560)
  
 ![alt tag](http://lh3.googleusercontent.com/5Gv5bAlREw5IgnTjawEmS1leLaiAK2zN1hZoSMjyNgdXgFM7c9L6Gio_-Z-CZB-z8k6AS2ZVQRANMziByaSGvg=s576)
 
