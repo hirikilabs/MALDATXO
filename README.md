@@ -12,6 +12,7 @@ The sketch controls 10 AC led system with a AC led controller with zero cross de
 ![alt tag](http://lh3.googleusercontent.com/5Gv5bAlREw5IgnTjawEmS1leLaiAK2zN1hZoSMjyNgdXgFM7c9L6Gio_-Z-CZB-z8k6AS2ZVQRANMziByaSGvg=s576)
 
 [AC led controller] (http://www.inmojo.com/store/krida-electronics/) (we use one of 8 channel and another with 2 channel.)
+
 ![alt tag](https://es.rs-online.com/largeimages/F4931289-01.jpg)
 
 [PIR detector] (https://es.rs-online.com/web/p/detectores-de-alarma-de-seguridad-y-sensores-de-proximidad/4931289/?searchTerm=493-1289&relevancy-data=636F3D3126696E3D4931384E525353746F636B4E756D6265724D504E266C753D656E266D6D3D6D61746368616C6C26706D3D5E5C647B337D5B5C732D2F255C2E2C5D5C647B332C347D2426706F3D313426736E3D592673743D52535F53544F434B5F4E554D4245522677633D4E4F4E45267573743D3439332D31323839267374613D3439333132383926)
