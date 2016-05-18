@@ -27,8 +27,9 @@ unsigned char CH[]={CH0,CH1,CH2,CH3,CH4,CH5,CH6,CH7,CH8,CH9};
 unsigned char dim_level[]={5,8,10,12,15,18,20,25,30,35,45,50,55,60,65,70,75,80,82,85,88,92,95};   // don't use this massive for 60Hz
                                                                                                   // create new massive for 60Hz
 int i=0;
+int j=0;
 int generator;
-int delay_time;     // delay ms or flashing SPEED
+int long delay_time;     // delay ms or flashing SPEED
 unsigned char clock_tick;        // variable for Timer1
 unsigned char CHANNEL_SELECT;    // variable for channel select
 
@@ -192,7 +193,7 @@ delay_time = 150;
 
 for (CHANNEL_SELECT=0;CHANNEL_SELECT<10;CHANNEL_SELECT++)  // fade up
  {
-  for (i=23;i>1;i--)
+  for (i=22;i>1;i--)
   {
     CH[CHANNEL_SELECT]=dim_level[i];
     delay(delay_time);
@@ -201,7 +202,7 @@ for (CHANNEL_SELECT=0;CHANNEL_SELECT<10;CHANNEL_SELECT++)  // fade up
 delay(2000);
 for (CHANNEL_SELECT=0;CHANNEL_SELECT<10;CHANNEL_SELECT++)  // fade down
  {
-  for (i=0;i<23;i++)
+  for (i=0;i<22;i++)
   {
     CH[CHANNEL_SELECT]=dim_level[i];
     delay(delay_time);
@@ -336,18 +337,17 @@ void randomLED(){
 
   for (i=0;i<=50;i++){
     
-    i = random(10);    
+    j = random(10);    
     delay_time = random(500,3000);
 
-    ledPins[i] = high;
+    CH[j] = high;
     delay(delay_time);                    
-    ledPins[i]= low; 
+    CH[j]= low; 
   }
 }
 
 void daylight(){
    
-   CH0=high;CH1=high;CH2=high;CH3=5;CH4=high;CH5=high;CH6=high;CH7=5;CH8=high;CH9=high;
    delay(delay_time);
    lightLevel = analogRead(LDR);
    autoTune();
@@ -355,6 +355,18 @@ void daylight(){
    while (lightLevel >= threshold){
    lightLevel = analogRead(LDR);
    autoTune();
+   
+   for (i=0;i<=50;i++){
+    
+    j = random(0,4);    
+    delay_time = 120000;
+
+    CH[j] = high;
+    CH[j+5] = high;
+    delay(delay_time);                    
+    CH[j]= low;
+    CH[j+5] = low;
+   }
    }
    CH0=off;CH1=off;CH2=off;CH3=off;CH4=off;CH5=off;CH6=off;CH7=off;CH8=off;CH9=off;
    delay(delay_time);
